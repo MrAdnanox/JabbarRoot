@@ -1,0 +1,22 @@
+{
+  "id": "c2c60869-0518-465f-af62-803ca8888294",
+  "name": "RAG",
+  "projectRootPath": "/media/adnan/Projects/JabbarRoot",
+  "brickContextIds": [
+    "c9dbd3f7-a5f5-4cce-bd76-699d20998b9a",
+    "b0928ed5-5650-47c8-941a-121232c41a2b"
+  ],
+  "options": {
+    "compilationCompressionLevel": "none",
+    "compilationIncludeProjectTree": true,
+    "defaultBrickCompressionLevel": "none",
+    "defaultBrickIncludeProjectTree": true,
+    "defaultBrickIncludeProjectTreeMaxDepth": 7,
+    "projectIgnoreFiles": [],
+    "projectIgnorePatterns": []
+  },
+  "metadata": {
+    "createdAt": "2025-07-13T01:15:18.236Z",
+    "updatedAt": "2025-07-13T04:40:29.531Z"
+  }
+}

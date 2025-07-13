@@ -1,0 +1,39 @@
+{
+  "id": "c9dbd3f7-a5f5-4cce-bd76-699d20998b9a",
+  "projectId": "c2c60869-0518-465f-af62-803ca8888294",
+  "name": "RAG",
+  "files_scope": [
+    "RAG/agent/agent.py",
+    "RAG/agent/api.py",
+    "RAG/agent/db_utils.py",
+    "RAG/agent/graph_utils.py",
+    "RAG/agent/models.py",
+    "RAG/agent/prompts.py",
+    "RAG/agent/providers.py",
+    "RAG/agent/tools.py",
+    "RAG/documents/doc1_openai_funding.md",
+    "RAG/ingestion/chunker.py",
+    "RAG/ingestion/embedder.py",
+    "RAG/ingestion/graph_builder.py",
+    "RAG/ingestion/ingest.py",
+    "RAG/sql/schema.sql",
+    "RAG/tests/agent/test_db_utils.py",
+    "RAG/agent/providers_google.py",
+    "RAG/tests/conftest.py",
+    "RAG/tests/agent/test_models.py",
+    "RAG/tests/ingestion/__init__.py",
+    "RAG/tests/ingestion/test_chunker.py"
+  ],
+  "options": {
+    "compilationCompressionLevel": "standard",
+    "compilationIncludeProjectTree": false,
+    "brickIgnorePatterns": [],
+    "special_sections": {}
+  },
+  "isActiveForProjectCompilation": true,
+  "isDefaultTarget": false,
+  "metadata": {
+    "createdAt": "2025-07-13T03:46:40.836Z",
+    "updatedAt": "2025-07-13T04:40:32.565Z"
+  }
+}
