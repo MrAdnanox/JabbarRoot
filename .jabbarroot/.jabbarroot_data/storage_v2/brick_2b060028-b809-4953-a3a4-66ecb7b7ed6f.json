@@ -1,0 +1,38 @@
+{
+  "id": "2b060028-b809-4953-a3a4-66ecb7b7ed6f",
+  "projectId": "c2c60869-0518-465f-af62-803ca8888294",
+  "name": "analyser",
+  "files_scope": [
+    "analyzer-engine/agent/agent.py",
+    "analyzer-engine/agent/api.py",
+    "analyzer-engine/agent/db_utils.py",
+    "analyzer-engine/agent/graph_utils.py",
+    "analyzer-engine/agent/models.py",
+    "analyzer-engine/agent/prompts.py",
+    "analyzer-engine/agent/providers.py",
+    "analyzer-engine/agent/providers_google.py",
+    "analyzer-engine/agent/tools.py",
+    "analyzer-engine/ingestion/chunker.py",
+    "analyzer-engine/ingestion/embedder.py",
+    "analyzer-engine/ingestion/graph_builder.py",
+    "analyzer-engine/ingestion/ingest.py",
+    "analyzer-engine/ingestion/mock_code_data.py",
+    "analyzer-engine/sql/schema.sql",
+    "analyzer-engine/.env",
+    "analyzer-engine/cli.py",
+    "analyzer-engine/pytest.ini",
+    "analyzer-engine/requirements.txt"
+  ],
+  "options": {
+    "compilationCompressionLevel": "standard",
+    "compilationIncludeProjectTree": false,
+    "brickIgnorePatterns": [],
+    "special_sections": {}
+  },
+  "isActiveForProjectCompilation": true,
+  "isDefaultTarget": true,
+  "metadata": {
+    "createdAt": "2025-07-13T19:13:47.182Z",
+    "updatedAt": "2025-07-13T19:15:56.390Z"
+  }
+}
