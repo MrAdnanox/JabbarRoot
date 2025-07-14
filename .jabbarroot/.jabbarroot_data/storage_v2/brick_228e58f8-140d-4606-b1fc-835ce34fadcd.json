@@ -34,7 +34,14 @@
     "analyzer-engine/ingestion/parsing/__init__.py",
     "analyzer-engine/ingestion/orchestration/stages/__init__.py",
     "analyzer-engine/ingestion/analysis/__init__.py",
-    "analyzer-engine/core/__init__.py"
+    "analyzer-engine/core/__init__.py",
+    "analyzer-engine/sql/_drop_all.sql",
+    "analyzer-engine/sql/core/00_extensions.sql",
+    "analyzer-engine/sql/core/01_functions.sql",
+    "analyzer-engine/sql/core/02_triggers.sql",
+    "analyzer-engine/sql/modules/00_documents_chunks.sql",
+    "analyzer-engine/sql/modules/01_sessions_messages.sql",
+    "analyzer-engine/sql/views/00_document_summaries.sql"
   ],
   "options": {
     "compilationCompressionLevel": "standard",
