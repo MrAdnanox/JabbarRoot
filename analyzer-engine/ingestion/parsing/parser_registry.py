@@ -1,6 +1,7 @@
 # analyzer-engine/ingestion/parsing/parser_registry.py
 from typing import List, Type
-from ...core.contracts.parser import IParser
+from core.contracts.parser_contract import IParser
+from .parsers.python_parser import PythonParser # <-- MODIFICATION: Import
 
 class ParserRegistry:
     """Registre pour trouver le parseur adéquat."""
@@ -17,8 +18,7 @@ class ParserRegistry:
         raise ValueError(f"No parser found for language: {language}")
 
 
-# Exemple de registre "singleton"
+# Registre "singleton"
 parser_registry = ParserRegistry()
-# Dans le futur, on y enregistrera les parseurs au démarrage de l'app.
-# from .parsers.python_parser import PythonParser
-# parser_registry.register(PythonParser())
+# <-- MODIFICATION: Enregistrement du parseur Python au démarrage
+parser_registry.register(PythonParser())

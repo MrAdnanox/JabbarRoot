@@ -1,9 +1,7 @@
-
 # analyzer-engine/ingestion/orchestration/stages/parsing_stage.py
 from .base_stage import IPipelineStage
 from ..execution_context import ExecutionContext
-from ...parsing.parser_registry import parser_registry
-
+from ingestion.parsing.parser_registry import parser_registry
 class ParsingStage(IPipelineStage):
     """Étape responsable du parsing du code source."""
 

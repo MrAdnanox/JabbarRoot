@@ -1,3 +1,5 @@
+# Fichier : analyzer-engine/ingestion/chunker.py
+
 """
 Semantic chunking implementation for intelligent document splitting.
 """
@@ -16,17 +18,13 @@ load_dotenv()
 
 logger = logging.getLogger(__name__)
 
-# Import flexible providers and the centralized config model
-try:
-    # This path is for when the module is run as part of the application
-    from ..agent.providers import get_ingestion_model
-    from ..agent.models import IngestionConfig
-except ImportError:
-    # This path is for direct execution or testing (e.g., `python -m ingestion.chunker`)
-    import sys
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from agent.providers import get_ingestion_model
-    from agent.models import IngestionConfig
+# --- NOUVELLE SECTION D'IMPORTS NETTOYÉE ---
+# Imports directs et propres après le refactoring architectural.
+# Toute la logique 'try...except' pour les imports a été supprimée.
+from agent.providers import get_ingestion_model
+from core.models.db import IngestionConfig
+# --- FIN DE LA SECTION D'IMPORTS ---
+
 
 # Initialize clients with flexible providers
 ingestion_model = get_ingestion_model()
