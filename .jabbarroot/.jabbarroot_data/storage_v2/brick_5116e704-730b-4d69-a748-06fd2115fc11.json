@@ -1,0 +1,40 @@
+{
+  "id": "5116e704-730b-4d69-a748-06fd2115fc11",
+  "projectId": "c2c60869-0518-465f-af62-803ca8888294",
+  "name": "front",
+  "files_scope": [
+    "frontend/postcss.config.js",
+    "frontend/tailwind.config.js",
+    "frontend/svelte.config.js",
+    "frontend/package.json",
+    "frontend/jsconfig.json",
+    "frontend/src/app.pcss",
+    "frontend/src/routes/+layout.svelte",
+    "frontend/src/routes/+page.svelte",
+    "frontend/vitest-setup-client.js",
+    "frontend/vite.config.js",
+    "frontend/src/app.d.ts",
+    "frontend/src/app.html",
+    "frontend/src/demo.spec.js",
+    "frontend/src/routes/page.svelte.test.js",
+    "frontend/src/lib/index.js",
+    "frontend/src/lib/components/AdvancedFilePicker.svelte",
+    "frontend/src/lib/components/IngestionControlPanel.svelte",
+    "frontend/src/lib/components/LogViewer.svelte",
+    "frontend/src/lib/components/SystemHealthDashboard.svelte",
+    "frontend/src/lib/services/ingestionService.ts",
+    "frontend/src/lib/stores/systemHealthStore.ts"
+  ],
+  "options": {
+    "compilationCompressionLevel": "standard",
+    "compilationIncludeProjectTree": false,
+    "brickIgnorePatterns": [],
+    "special_sections": {}
+  },
+  "isActiveForProjectCompilation": true,
+  "isDefaultTarget": false,
+  "metadata": {
+    "createdAt": "2025-07-14T03:39:49.275Z",
+    "updatedAt": "2025-07-14T22:38:37.449Z"
+  }
+}

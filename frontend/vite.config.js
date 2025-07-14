@@ -1,40 +1,19 @@
-import devtoolsJson from 'vite-plugin-devtools-json';
-import tailwindcss from '@tailwindcss/vite';
+// frontend/vite.config.js
+
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
 	plugins: [
-		tailwindcss(),
-		sveltekit(),
-		devtoolsJson()
+		// L'ordre est parfois important. tailwindcss() peut être placé ici.
+		tailwindcss(), 
+		sveltekit()
 	],
 	test: {
-		projects: [
-			{
-				extends: './vite.config.js',
-				test: {
-					name: 'client',
-					environment: 'browser',
-					browser: {
-						enabled: true,
-						provider: 'playwright',
-						instances: [{ browser: 'chromium' }]
-					},
-					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
-					exclude: ['src/lib/server/**'],
-					setupFiles: ['./vitest-setup-client.js']
-				}
-			},
-			{
-				extends: './vite.config.js',
-				test: {
-					name: 'server',
-					environment: 'node',
-					include: ['src/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
-				}
-			}
-		]
+		// Configuration Vitest simplifiée et fonctionnelle
+		include: ['src/**/*.{test,spec}.{js,ts}'],
+		environment: 'jsdom',
+		setupFiles: ['./vitest-setup-client.js'],
 	}
 });

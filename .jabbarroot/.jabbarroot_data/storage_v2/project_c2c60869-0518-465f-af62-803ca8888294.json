@@ -3,7 +3,8 @@
   "name": "RAG",
   "projectRootPath": "/media/adnan/Projects/JabbarRoot",
   "brickContextIds": [
-    "228e58f8-140d-4606-b1fc-835ce34fadcd"
+    "228e58f8-140d-4606-b1fc-835ce34fadcd",
+    "5116e704-730b-4d69-a748-06fd2115fc11"
   ],
   "options": {
     "compilationCompressionLevel": "none",
@@ -16,6 +17,6 @@
   },
   "metadata": {
     "createdAt": "2025-07-13T01:15:18.236Z",
-    "updatedAt": "2025-07-13T20:09:26.741Z"
+    "updatedAt": "2025-07-14T03:39:52.446Z"
   }
 }

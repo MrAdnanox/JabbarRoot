@@ -3,13 +3,6 @@
   "projectId": "c2c60869-0518-465f-af62-803ca8888294",
   "name": "ANALYSER",
   "files_scope": [
-    "analyzer-engine/agent/agent.py",
-    "analyzer-engine/agent/api.py",
-    "analyzer-engine/agent/models.py",
-    "analyzer-engine/agent/prompts.py",
-    "analyzer-engine/agent/providers_google.py",
-    "analyzer-engine/agent/providers.py",
-    "analyzer-engine/agent/tools.py",
     "analyzer-engine/core/contracts/analyzer_contract.py",
     "analyzer-engine/core/contracts/parser_contract.py",
     "analyzer-engine/core/contracts/repository_contract.py",
@@ -25,7 +18,6 @@
     "analyzer-engine/ingestion/chunker.py",
     "analyzer-engine/ingestion/embedder.py",
     "analyzer-engine/ingestion/ingest.py",
-    "analyzer-engine/ingestion/mock_code_data.py",
     "analyzer-engine/sql/schema.sql",
     "analyzer-engine/.env",
     "analyzer-engine/cli.py",
@@ -37,7 +29,12 @@
     "analyzer-engine/ingestion/storage/repositories/postgres_repository.py",
     "analyzer-engine/core/contracts/vector_repository_contract.py",
     "analyzer-engine/ingestion/parsing/parsers/python_parser.py",
-    "analyzer-engine/core/models/db.py"
+    "analyzer-engine/core/models/db.py",
+    "analyzer-engine/ingestion/analysis/analyzer_registry.py",
+    "analyzer-engine/ingestion/parsing/__init__.py",
+    "analyzer-engine/ingestion/orchestration/stages/__init__.py",
+    "analyzer-engine/ingestion/analysis/__init__.py",
+    "analyzer-engine/core/__init__.py"
   ],
   "options": {
     "compilationCompressionLevel": "standard",
@@ -49,6 +46,6 @@
   "isDefaultTarget": true,
   "metadata": {
     "createdAt": "2025-07-13T20:09:21.092Z",
-    "updatedAt": "2025-07-13T21:18:38.596Z"
+    "updatedAt": "2025-07-14T22:38:37.099Z"
   }
 }

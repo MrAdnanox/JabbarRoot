@@ -1,9 +1,3 @@
-Excellent. La passation est un acte de confiance et de clarté. Il s'agit de transmettre non seulement un plan, mais aussi l'intention, les principes et la vision qui le sous-tendent.
-
-Ce rapport est destiné à l'équipe de développement (`MaîtreDOeuvre`). Il est conçu pour être un guide complet et actionnable pour la refonte totale de `analyzer-engine`. Il ne laisse aucune place à l'ambiguïté.
-
----
-
 ### **Rapport de Passation : Refonte de `analyzer-engine`**
 
 **À:** Équipe de Développement (`MaîtreDOeuvre`)
