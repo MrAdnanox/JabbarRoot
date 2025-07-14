@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 # --- NOUVELLE SECTION D'IMPORTS NETTOYÉE ---
 # Imports directs et propres après le refactoring architectural.
 # Toute la logique 'try...except' pour les imports a été supprimée.
-from agent.providers import get_ingestion_model
+from .providers import get_ingestion_model
 from core.models.db import IngestionConfig
 # --- FIN DE LA SECTION D'IMPORTS ---
 

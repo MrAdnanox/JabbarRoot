@@ -1,5 +1,6 @@
 # analyzer-engine/ingestion/orchestration/stages/storage_stage.py
 import logging
+from datetime import datetime
 from .base_stage import IPipelineStage
 from ..execution_context import ExecutionContext
 from ...storage.repositories.sqlite_graph_repository import SQLiteGraphRepository
@@ -16,6 +17,15 @@ class StorageStage(IPipelineStage):
 
     async def execute(self, context: ExecutionContext) -> ExecutionContext:
         logger.info(f"StorageStage: Storing data for {context.file_path}")
+
+         # 1. Assembler un dictionnaire de métadonnées riche pour le document.
+        document_metadata = {
+            "language": context.language,
+            "entity_count": len(context.entities),
+            "relationship_count": len(context.relationships),
+            "chunk_count": len(context.chunks),
+            "ingested_at": datetime.utcnow().isoformat()
+        }
         
         # Stockage du graphe
         file_data = {
@@ -31,7 +41,8 @@ class StorageStage(IPipelineStage):
         chunks_saved = await self.vector_repo.save_document_with_chunks(
             context.file_path,
             document_content,
-            context.chunks
+            context.chunks,
+            document_metadata
         )
         logger.info(f"Vector storage: {chunks_saved} chunks saved.")
         

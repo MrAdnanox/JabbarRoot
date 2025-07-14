@@ -9,6 +9,7 @@ from typing import Optional, Any, Protocol, List
 from pydantic_ai.providers.openai import OpenAIProvider
 from pydantic_ai.models.openai import OpenAIModel
 from dotenv import load_dotenv
+from .providers_google import GoogleAIEmbedder
 
 # Load environment variables
 load_dotenv()

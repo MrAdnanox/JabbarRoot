@@ -90,14 +90,15 @@ class PostgresRepository(IVectorRepository):
             rows = await conn.fetch("SELECT * FROM get_document_chunks($1::uuid)", document_id)
             return [dict(row) for row in rows]
             
-    async def save_document_with_chunks(self, file_path: str, document_content: str, chunks: List[Dict[str, Any]]) -> int:
+    async def save_document_with_chunks(self, file_path: str, document_content: str, chunks: List[Dict[str, Any]], document_metadata: Dict[str, Any]) -> int:
         async with self._get_connection() as conn:
             async with conn.transaction():
+
                 document_id = await conn.fetchval(
-                    "INSERT INTO documents (title, source, content) VALUES ($1, $2, $3) RETURNING id",
-                    file_path, file_path, document_content
+                    "INSERT INTO documents (title, source, content, metadata) VALUES ($1, $2, $3, $4) RETURNING id",
+                    file_path, file_path, document_content, json.dumps(document_metadata)
                 )
-                
+
                 chunks_to_insert = [
                     (document_id, c['content'], str(c['embedding']), c['index'], json.dumps(c['metadata']), c.get('token_count'))
                     for c in chunks if c.get('embedding') is not None

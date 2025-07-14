@@ -45,6 +45,6 @@ class IVectorRepository(ABC):
         pass
 
     @abstractmethod
-    async def save_document_with_chunks(self, file_path: str, document_content: str, chunks: List[Dict[str, Any]]) -> int:
+    async def save_document_with_chunks(self, file_path: str, document_content: str, chunks: List[Dict[str, Any]], document_metadata: Dict[str, Any]) -> int:
         """Sauvegarde un document et tous ses chunks de manière atomique."""
         pass

@@ -7,6 +7,7 @@ import asyncio
 import logging
 from typing import List, Optional
 from datetime import datetime
+import os
 
 from dotenv import load_dotenv
 
@@ -14,12 +15,11 @@ from .chunker import DocumentChunk
 
 # Import the new flexible provider factory
 try:
-    from ..agent.providers import get_embedder, EmbeddingProvider
+    from .providers import get_embedder, EmbeddingProvider
 except ImportError:
     import sys
     import os
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from agent.providers import get_embedder, EmbeddingProvider
 
 # Load environment variables
 load_dotenv()
