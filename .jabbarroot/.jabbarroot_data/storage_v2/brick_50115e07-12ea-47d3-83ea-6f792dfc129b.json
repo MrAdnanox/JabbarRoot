@@ -1,0 +1,33 @@
+{
+  "id": "50115e07-12ea-47d3-83ea-6f792dfc129b",
+  "projectId": "c2c60869-0518-465f-af62-803ca8888294",
+  "name": "mcp-crawl-rag",
+  "files_scope": [
+    "mcp-crawl-rag/crawled_pages.sql",
+    "mcp-crawl-rag/pyproject.toml",
+    "mcp-crawl-rag/README.md",
+    "mcp-crawl-rag/.env.example",
+    "mcp-crawl-rag/src/crawl4ai_mcp.py",
+    "mcp-crawl-rag/src/utils.py",
+    "mcp-crawl-rag/src/crawl4ai_mcp.egg-info/requires.txt",
+    "mcp-crawl-rag/knowledge_graphs/ai_hallucination_detector.py",
+    "mcp-crawl-rag/knowledge_graphs/ai_script_analyzer.py",
+    "mcp-crawl-rag/knowledge_graphs/hallucination_reporter.py",
+    "mcp-crawl-rag/knowledge_graphs/knowledge_graph_validator.py",
+    "mcp-crawl-rag/knowledge_graphs/parse_repo_into_neo4j.py",
+    "mcp-crawl-rag/knowledge_graphs/query_knowledge_graph.py",
+    "mcp-crawl-rag/knowledge_graphs/test_script.py"
+  ],
+  "options": {
+    "compilationCompressionLevel": "standard",
+    "compilationIncludeProjectTree": false,
+    "brickIgnorePatterns": [],
+    "special_sections": {}
+  },
+  "isActiveForProjectCompilation": true,
+  "isDefaultTarget": false,
+  "metadata": {
+    "createdAt": "2025-07-15T02:40:16.758Z",
+    "updatedAt": "2025-07-15T03:45:37.759Z"
+  }
+}

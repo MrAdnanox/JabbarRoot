@@ -41,7 +41,17 @@
     "analyzer-engine/sql/core/02_triggers.sql",
     "analyzer-engine/sql/modules/00_documents_chunks.sql",
     "analyzer-engine/sql/modules/01_sessions_messages.sql",
-    "analyzer-engine/sql/views/00_document_summaries.sql"
+    "analyzer-engine/sql/views/00_document_summaries.sql",
+    "analyzer-engine/plugins/loader.py",
+    "analyzer-engine/plugins/plugin_interface.py",
+    "analyzer-engine/plugins/__init__.py",
+    "analyzer-engine/plugins_enabled/__init__.py",
+    "analyzer-engine/plugins_enabled/sample_complexity_analyzer/__init__.py",
+    "analyzer-engine/tests/conftest.py",
+    "analyzer-engine/tests/__pycache__/conftest.cpython-312-pytest-8.4.1.pyc",
+    "analyzer-engine/tests/e2e/test_cli_ingestion.py",
+    "analyzer-engine/tests/core/models/test_db_models.py",
+    "analyzer-engine/tests/ingestion/orchestration/test_pipeline_director.py"
   ],
   "options": {
     "compilationCompressionLevel": "standard",
@@ -53,6 +63,6 @@
   "isDefaultTarget": true,
   "metadata": {
     "createdAt": "2025-07-13T20:09:21.092Z",
-    "updatedAt": "2025-07-14T22:38:37.099Z"
+    "updatedAt": "2025-07-15T03:46:14.900Z"
   }
 }

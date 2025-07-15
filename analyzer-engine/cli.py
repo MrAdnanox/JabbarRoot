@@ -1,10 +1,11 @@
+# FICHIER: analyzer-engine/cli.py (MODIFIÉ)
 import asyncio
 import logging
 import argparse
 import os
 
-# Ce fichier étant à la racine, aucun besoin de manipuler sys.path.
-# Les imports fonctionnent nativement.
+# NOUVEAUX IMPORTS STRATÉGIQUES
+from plugins.loader import load_plugins
 from ingestion.orchestration.pipeline_director import PipelineDirector
 
 # Configuration du logging
@@ -42,6 +43,17 @@ async def run_ingestion(file_path: str):
 
 async def main():
     """Point d'entrée principal du CLI."""
+    
+    # Charger les plugins AVANT toute autre opération.
+    # Les registres seront ainsi peuplés avec les composants externes
+    # avant que le PipelineDirector ne soit instancié et utilisé.
+    logger.info("="*50)
+    logger.info("Phase de démarrage : Chargement des plugins externes...")
+    load_plugins()
+    logger.info("Chargement des plugins terminé. L'application est prête.")
+    logger.info("="*50)
+    # =====================================================================
+
     parser = argparse.ArgumentParser(description="CLI pour l'écosystème JabbarRoot Analyzer.")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
